@@ -1,84 +1,58 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tecnistar Pro</title>
-</head>
-
-<!DOCTYPE html>
-Placa:
-<input><label>Placa</label><br>
-<input 
-  type="text"
-  placeholder="Ej: ABC123"
-  inputmode="text"
->
-<head>
-  <title>Tecnistar Pro</title>
-</head>
-<body>
+<html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Tecnistar Pro</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tecnistar Pro</title>
+
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #0f172a;
-      color: white;
-      margin: 0;
-      padding: 20px;
+      background: #f2f2f2;
+      padding: 15px;
     }
     h1 {
-      color: #38bdf8;
+      text-align: center;
+      color: #c00000;
     }
-    .card {
-      background: #1e293b;
-      padding: 15px;
-      border-radius: 10px;
-      margin-bottom: 15px;
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 15px;
+    }
+    input, textarea, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      font-size: 16px;
     }
     button {
-      width: 100%;
-      padding: 12px;
-      background: #38bdf8;
+      background: #c00000;
+      color: white;
       border: none;
-      border-radius: 8px;
-      font-size: 16px;
-      margin-top: 10px;
+      margin-top: 20px;
     }
   </style>
 </head>
+
 <body>
 
-  <h1>🔧 Tecnistar Pro</h1>
-  <p>Sistema de gestión para taller automotriz</p>
-
-  <div class="card">
-    <strong>📋 Nuevo Servicio</strong>
-    <button>Crear Orden</button>
+  <div style="text-align:center;">
+    <img src="logo.png" alt="Tecnistar" style="max-width:180px;">
   </div>
 
-  <div class="card">
-    <strong>🚗 Vehículos</strong>
-    <button>Registrar Vehículo</button>
-  </div>
+  <h1>Tecnistar Pro</h1>
 
-  <div class="card">
-    <strong>🧾 Historial</strong>
-    <button>Ver Servicios</button>
-  </div>
+  <label>Placa del vehículo</label>
+  <input type="text" placeholder="Ej: ABC123">
+
+  <label>Kilometraje</label>
+  <input type="number" placeholder="Ej: 85000">
+
+  <label>Diagnóstico / Observaciones</label>
+  <textarea rows="4" placeholder="Escriba aquí el diagnóstico"></textarea>
+
+  <button>Guardar Orden</button>
 
 </body>
 </html>
-<label>Kilometraje</label><br>
-<input 
-  type="number"
-  placeholder="Ej: 85000"
-  inputmode="numeric"
-><label>Diagnóstico</label><br>
-<textarea 
-  placeholder="Escriba el diagnóstico"
-  rows="4"
-  style="width:100%;"
-></textarea>
